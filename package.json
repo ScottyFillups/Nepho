@@ -1,0 +1,23 @@
+{
+  "name": "nepho",
+  "version": "1.0.0",
+  "description": "Phone comparison site that uses FonoAPI",
+  "main": "entry.js",
+  "dependencies": {
+    "fonoapi-nodejs": "^0.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScottyFillups/Nepho.git"
+  },
+  "author": "Philip Scott",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ScottyFillups/Nepho/issues"
+  },
+  "homepage": "https://github.com/ScottyFillups/Nepho#readme"
+}
