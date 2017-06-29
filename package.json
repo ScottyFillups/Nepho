@@ -4,9 +4,13 @@
   "description": "Phone comparison site that uses FonoAPI",
   "main": "entry.js",
   "dependencies": {
+    "express": "^4.15.3",
     "fonoapi-nodejs": "^0.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jquery": "^3.2.1",
+    "nodemon": "^1.11.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
