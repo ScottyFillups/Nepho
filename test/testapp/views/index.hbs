@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="stylesheet" href="stylesheets/style.css">
         <script src="javascripts/angular.js"></script>
         <script src="javascripts/main.js"></script>
     </head>
@@ -10,15 +11,19 @@
                 <input type="text" name="search">
                 <input type="submit" value="Search!">
             </form>
-            <h1>{{phone.DeviceName}}</h1>
-            <table>
-                {{#each phone}}
-                    <tr>
-                        <td>{{@key}}</td>
-                        <td>{{this}}</td>
-                    </tr>
-                {{/each}}
-            </table>
+            {{#each phone}}
+                <div class="phone-entry">
+                    <h1>{{this.DeviceName}}</h1>
+                    <table>
+                        {{#each this}}
+                            <tr>
+                                <td>{{@key}}</td>
+                                <td>{{this}}</td>
+                            </tr>
+                        {{/each}}
+                    </table>
+                </div>
+            {{/each}}
         </div>
     </body>
 </html>
