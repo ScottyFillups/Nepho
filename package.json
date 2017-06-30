@@ -1,27 +1,21 @@
 {
-  "name": "nepho",
-  "version": "1.0.0",
-  "description": "Phone comparison site that uses FonoAPI",
-  "main": "entry.js",
+  "name": "testapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
   "dependencies": {
-    "express": "^4.15.3",
-    "fonoapi-nodejs": "^0.1.1"
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "fonoapi-nodejs": "^0.1.1",
+    "hbs": "~4.0.1",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
   },
   "devDependencies": {
-    "jquery": "^3.2.1",
-    "nodemon": "^1.11.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ScottyFillups/Nepho.git"
-  },
-  "author": "Philip Scott",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ScottyFillups/Nepho/issues"
-  },
-  "homepage": "https://github.com/ScottyFillups/Nepho#readme"
+    "angular": "^1.6.4"
+  }
 }
