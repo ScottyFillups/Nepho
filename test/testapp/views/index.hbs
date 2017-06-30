@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="stylesheets/style.css">
@@ -6,11 +7,16 @@
     </head>
     <body ng-app="root">
         <div ng-controller="index">
-            <p ng-bind="message"></p>
-            <form action="/" method="post">
-                <input type="text" name="search">
-                <input type="submit" value="Search!">
-            </form>
+            <header>
+                <h1>Nepho! A phone<del>pho</del> comparison web app!</h1>
+                <h2>Built with <a href="https://fonoapi.freshpixl.com/">fonoapi</a> by Philip Scott</h2>
+                <p ng-bind="message"></p>
+                <form action="/" method="post">
+                    <input type="text" name="search">
+                    <input type="submit" value="Search!">
+                </form>
+            </header>
+            <section class="phones">
             {{#each phone}}
                 <div class="phone-entry">
                     <h1>{{this.DeviceName}}</h1>
@@ -24,6 +30,10 @@
                     </table>
                 </div>
             {{/each}}
+            </section>
         </div>
+        <footer>
+            built with <a href="https://fonoapi.freshpixl.com/">fonoapi</a> by Philip Scott
+        </footer>
     </body>
 </html>

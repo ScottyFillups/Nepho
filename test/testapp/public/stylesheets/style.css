@@ -6,7 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
-
 .phone-entry {
     display: inline-block;
+    width: 29%;
+    margin: 2%;
+}
+header {
+    text-align: center;
 }
