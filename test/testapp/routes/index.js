@@ -9,6 +9,12 @@ router.get("/", function(req, res) {
     fonoapi.getDevices(function(queryString, data) {
         res.render('index', {phone: data[0]});
     }, "iphone 6S");
-})
+});
+router.post("/", function(req, res) {
+    fonoapi.token = "9aaca61f8fad680548561fd336228f508d5e24a6bde084cb";
+    fonoapi.getDevices(function(queryString, data) {
+        res.render('index', {phone: data[0]});
+    }, req.body.search);
+});
 
 module.exports = router;
