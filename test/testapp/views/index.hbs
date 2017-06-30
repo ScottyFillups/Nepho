@@ -1,2 +1,9 @@
-<h1>{{DeviceName}}</h1>
-<p>Welcome to {{Brand}}</p>
+<h1>{{phone.DeviceName}}</h1>
+<table>
+{{#each phone}}
+<tr>
+    <td>{{@key}}</td>
+    <td>{{this}}</td>
+</tr>
+{{/each}}
+</table>
