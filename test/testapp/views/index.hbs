@@ -1,9 +1,21 @@
-<h1>{{phone.DeviceName}}</h1>
-<table>
-{{#each phone}}
-<tr>
-    <td>{{@key}}</td>
-    <td>{{this}}</td>
-</tr>
-{{/each}}
-</table>
+<html>
+    <head>
+        <script src="javascripts/angular.js"></script>
+        <script src="javascripts/main.js"></script>
+    </head>
+    <body ng-app="root">
+        <div ng-controller="index">
+            <p ng-bind="message"></p>
+
+            <h1>{{phone.DeviceName}}</h1>
+            <table>
+                {{#each phone}}
+                    <tr>
+                        <td>{{@key}}</td>
+                        <td>{{this}}</td>
+                    </tr>
+                {{/each}}
+            </table>
+        </div>
+    </body>
+</html>
